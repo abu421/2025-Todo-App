@@ -1,0 +1,44 @@
+.filter-container{
+    padding: 15px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 5px;
+    border: unset;
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        p{
+            margin: 0;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        svg{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            padding: 8px 10px;
+            border-radius: 6px;
+            border: unset;
+        }
+
+        .active{
+            background-color: rgb(73, 189, 227);
+        }
+    }
+    .hidden{
+        display: none;
+    }
+}
