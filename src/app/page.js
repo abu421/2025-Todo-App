@@ -1,7 +1,10 @@
+import styles from "app/page.module.scss";
+import Main from "@/components/main/main";
+
 export default function Home() {
   return (
-    <>
-      <p>Hello</p>
-    </>
+    <div className={styles["main-container"]}>
+      <Main />
+    </div>
   );
 }
