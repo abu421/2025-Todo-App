@@ -1,0 +1,74 @@
+.task-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    .controls{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        svg{
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        .plus{
+            fill: blue;
+        }
+        .close{
+            fill: red;
+        }
+
+        .clear{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            font-family: sans-serif;
+            border-radius: 5px;
+            border: unset;
+            background-color: rgb(210, 210, 210);
+            padding: 5px 10px;
+
+            svg{
+                margin-right: 5px;
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+        }
+    }
+    
+    .inputTab{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(210, 210, 210);
+        border-radius: 8px;
+
+        input{
+            padding: 10px 8px;
+            border-radius: 8px;
+            border: 1px solid grey;
+            width: 45%;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 8px;
+            border: unset;
+        }
+        button.add{
+            color: white;
+            background-color: rgb(73, 189, 227);
+        }
+    }
+    .hidden{
+        display: none;
+    }
+}
