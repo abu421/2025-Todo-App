@@ -3,12 +3,12 @@
     background-color: rgb(210, 210, 210);
     border-radius: 5px;
     border: unset;
+    margin-bottom: 20px;
 
     .header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 15px;
 
         p{
             margin: 0;
@@ -21,6 +21,9 @@
             width: 1.5rem;
             height: 1.5rem;
         }
+    }
+    .marginDown{
+        margin-bottom: 15px;
     }
 
     .buttons{

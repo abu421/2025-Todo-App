@@ -7,7 +7,7 @@ const Filter = () => {
   const [expand, setExpand] = useState(true);
   const [activeButton, setActiveButton] = useState(0);
 
-  function expandTab() {
+  function expandTab(bool) {
     setExpand((prev) => !prev);
   }
   function activateButton(value, e) {
@@ -17,7 +17,7 @@ const Filter = () => {
   }
   return (
     <div className={styles["filter-container"]}>
-      <div className={styles.header}>
+      <div className={`${styles.header} ${expand ? "" : styles.marginDown}`}>
         <p>Filter Tasks</p>
         {expand ? (
           <IoMdArrowDropdown onClick={expandTab} />
