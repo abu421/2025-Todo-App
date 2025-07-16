@@ -18,10 +18,10 @@
         }
 
         .plus{
-            fill: blue;
+            fill: rgb(255, 255, 255);
         }
         .close{
-            fill: red;
+            fill: rgba(0, 0, 0, 0.469);
         }
 
         .clear{
@@ -34,6 +34,7 @@
             border: unset;
             background-color: rgb(210, 210, 210);
             padding: 5px 10px;
+            font-size: 16px;
 
             svg{
                 margin-right: 5px;
@@ -44,28 +45,35 @@
     }
     
     .inputTab{
-        padding: 15px;
+        padding: 15px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: rgb(210, 210, 210);
         border-radius: 8px;
+        width: 100%;
 
         input{
             padding: 10px 8px;
             border-radius: 8px;
             border: 1px solid grey;
             width: 45%;
+            margin-left: 15px;
+            font-size: 16px;
         }
 
         button {
             padding: 10px;
             border-radius: 8px;
             border: unset;
+            font-size: 16px;
         }
         button.add{
             color: white;
             background-color: rgb(73, 189, 227);
+        }
+        button.cancel{
+            margin-right: 15px;
         }
     }
     .hidden{
