@@ -57,6 +57,7 @@ const CreateTask = ({ setTaskLists }) => {
           id="inputField"
           type="text"
           placeholder="Add a new task..."
+          autoComplete="off"
         ></input>
         <button id="add" className={styles.add} onClick={addTask}>
           Add

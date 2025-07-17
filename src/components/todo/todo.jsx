@@ -11,6 +11,16 @@ const Todo = ({ header }) => {
   const [statusCount, setStatusCount] = useState({ active: 0, completed: 0 });
 
   useEffect(() => {
+    const retrievedListLocalStorage = localStorage.getItem("todoList");
+    console.log(retrievedListLocalStorage);
+    if (retrievedListLocalStorage) {
+      setTaskLists(JSON.parse(retrievedListLocalStorage));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todoList", JSON.stringify(taskLists));
+
     const statusDetails = taskLists.reduce(
       (acc, task) => {
         if (task.status === "active") acc.active += 1;
